@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="modalstyle.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="left">
+      <p id="time"></p>
+    </div>
+    <div class="middle">
+      <img
+        src="images/press.png"
+        class="thingy2 clickable shadow img"
+        class="center-content"
+        onclick="showModal()"
+        onclick="song()"
+      />
+    </div>
+    <div class="right">
+      <div class="small"></div>
+      <div class="small">
+        <img
+          src="images/box2.png"
+          class="thingy clickable shadow img"
+          onclick="showPzzleModal()"
+        />
+      </div>
+      <div class="small"></div>
+    </div>
+
+    <!-- Code for modal here-->
+    <div class="modal center-content" id="myModal">
+      <span class="close" style="font-size: 50px" onclick="hideModal()"
+        >&times;</span
+      >
+      <img src="images/pape.png" onclick="nextEscapeRoomPage()" />
+    </div>
+
+    <!-- Code for modal here-->
+    <div class="modal2 center-content" id="myPModal">
+      <span class="close" style="font-size: 50px" onclick="hidePzzleModal()"
+        >&times;</span
+      >
+
+      <div class="modal-content">
+        <div class="large2 pink curt">
+          <div class="small2 blue" onclick="songcut()" id="1">
+            <img
+              src="images/lock.png"
+              onclick="blue1()"
+              id="BL"
+              class="clickable"
+            />
+          </div>
+          <div class="middle2 blue"></div>
+          <div class="small2 blue" id="2">
+            <img
+              src="images/lock.png"
+              onclick="blue2()"
+              id="BR"
+              class="clickable"
+            />
+          </div>
+        </div>
+        <div class="large2 pink">
+          <div class="small2 violet" id="3">
+            <img
+              src="images/lock.png"
+              onclick="violet1()"
+              id="VL"
+              class="clickable"
+            />
+          </div>
+          <div class="middle2 violet"></div>
+          <div class="small2 violet" id="4">
+            <img
+              src="images/lock.png"
+              onclick="violet2()"
+              id="VR"
+              class="clickable"
+              class="no-cursor"
+            />
+          </div>
+        </div>
+        <div class="large2 red">
+          <div class="small2 red" id="5">
+            <img
+              src="images/lock.png"
+              onclick="red1()"
+              id="RL"
+              class="clickable"
+            />
+          </div>
+          <div class="middle2 red"></div>
+          <div class="small2 red" id="6">
+            <img
+              src="images/lock.png"
+              onclick="red2()"
+              id="RR"
+              class="clickable"
+            />
+          </div>
+        </div>
+        <div class="large2 yellow">
+          <div class="small2 yellow" id="7">
+            <img
+              src="images/lock.png"
+              onclick="yellow1()"
+              id="YL"
+              class="clickable"
+            />
+          </div>
+          <div class="middle2 yellow" id="8"></div>
+          <div class="small2 yellow">
+            <img src="images/lock.png" onclick="yellow2()" id="YR" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="images/cop.gif" id="copie" class="coprun hidecop" />
+    <script src="script.js"></script>
+    <script src="modalscript.js"></script>
+  </body>
+</html>

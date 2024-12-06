@@ -1,0 +1,78 @@
+body {
+  cursor: url("./images/cutter.png"), auto;
+}
+cursu {
+  max-height: 99%;
+  max-width: 99%;
+  cursor: url("./images/cutter.png"), auto;
+}
+
+.large2 {
+  display: flex;
+  height: calc(100% / 4);
+  width: 100%;
+}
+.middle2 {
+  height: 100%;
+  width: 50%;
+}
+.small2 {
+  height: 100%;
+  width: 25%;
+}
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  max-height: 100%;
+  max-width: 100%;
+  cursor: url("images/cut.png"), auto;
+}
+.no-cursor {
+  cursor: url("./images/cutter.png"), auto;
+}
+.clickable:hover {
+  cursor: pointer;
+}
+.clickable:active {
+  transform: scale(0.95);
+}
+.opaque {
+  background: #ff385e;
+  opacity: 0.7;
+}
+.translucent {
+  opacity: 0.1;
+}
+
+/* colors */
+.orange {
+  background-color: #ffb834;
+}
+.blue {
+  background-color: #0044fd;
+}
+.black {
+  background-color: #000000;
+}
+.purple {
+  background-color: #c699ca;
+}
+.yellow {
+  background-color: #ffea2f;
+}
+.pink {
+  background-color: #ff9dcb;
+}
+.red {
+  background-color: #ff0000a4;
+}
+.violet {
+  background-color: #ff0aada4;
+}
+
+.curt {
+  cursor: url("images/goat.png"), auto;
+}
